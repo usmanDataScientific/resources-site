@@ -1,0 +1,121 @@
+<div class="body">
+
+        <!--------Navber Desktop Size----------->
+
+    <div [class.Scrolled]="isScrolled" class="navber">
+        <div class="logo" id="home">Resources.Com</div>
+          <button class="menu-btn" (click)="toggleMenu()">☰</button>
+         <div class="nav-links">
+            <a routerLink="/feature" (click)="Alert()">Feature</a>
+            <a routerLink="/industry" (click)="Message()">Industry</a>
+            <a href="#Princing">Princing</a>
+            <a href="https://apps.microsoft.com/detail/9wzdncrfj3pz?hl=en-us&gl=US" (click)="companyMessage()">Company</a>
+            <a href="#More">More</a>
+            </div>
+              <div class="button">
+            <button class="login">Login</button>
+             <button class="free-trail">Free Trail</button>  
+            </div>
+        </div>
+         <!--------Navber Mobile Size----------->
+       <ul class="mobile-menu" *ngIf="menuOpen">
+        <a routerLink="/feature" (click)="Alert()">Feature</a>
+        <a routerLink="/Industry"  (click)="Message()">Industry</a>
+        <a href="#Princing">Princing</a>
+        <a href="https://apps.microsoft.com/detail/9wzdncrfj3pz?hl=en-us&gl=US" (click)="companyMessage()">Company</a>
+        <a href="#More">More</a>
+         <div class="button-login">
+            <button class="login">Login</button>
+             <button class="free-trail">Free Trail</button>  
+            </div>
+       </ul>
+
+
+
+        <!--Heading-->
+        <div class="left">
+       <div class="Heading">
+    <h1>Master <span>Your</span><br>
+     <span>Team's</span> Time</h1>
+      <p>Blissfully simple resource <br> management software</p>
+      <div class="email-btn">
+        <input type="text" placeholder="Enter E-mail" class="E-mail">
+        <button class="trail-btn">Free-trail</button>
+      </div>
+  </div>
+  <div class="right">
+  </div>
+  </div>
+    </div>
+
+
+
+                      <!-- Section -->
+
+    <div class="Section">
+      <h1>Become all-knowing, <span>instantly</span></h1>
+      <div class="image">
+      </div>
+      <p>Your employees are your most important asset. It's time to make sure you're getting the most from their precious time. Who's doing what, where and when? Resource management software has never been this user-friendly.</p>
+    </div>
+
+    <div class="desigin" id="Princing">
+    <div class="background-pic">
+    </div>
+    </div>
+
+  
+    <div class="rocket">
+  <div class="left-writing">
+    <h1>Lightning fast <br> scheduling!</h1>
+    <p>Drag it, drop it, book - unbook it. View it, change it, trash it, zoom it. This is resource scheduling software for high-speed teams that don’t want to slow down when things scale up.</p>
+     <button class="btn">Free-Trail</button>
+  </div>
+   <div class="right-rocket">
+    </div>
+  </div>
+
+
+
+<div class="writing-leptop">
+<div class="left-time">
+  <h1>A huge time <span>saver</span></h1>
+  <p>Daily schedule emails and personal dashboards keep everyone up-to-date with their work. Manual updates and stale schedule emails are a thing of the past. Daily schedule emails and personal dashboards keep everyone up-to-date with their work. Manual updates and stale schedule emails are a thing of the past. Daily schedule emails and personal dashboards keep everyone up-to-date with their work. Manual updates and stale schedule emails are a thing of the past. Daily schedule emails and personal dashboards keep everyone up-to-date with their work. Manual updates and stale schedule emails are a thing of the past.</p>
+  <button class="leptop-btn">Tutorial</button>
+</div>
+<div class="right-leptop">
+</div>
+</div>
+
+
+
+
+<div class="girl-pic" id="More">
+   <div class="paragraph">
+   <p>The path to stress-free projects starts here. It's time to say goodbye to missed deadlines, burnt up budgets and burnt out people. And hello to happy clients.</p>
+  </div>
+  <button class="get-free">Get-Trail</button>
+  </div>
+
+
+  <div class="logo-app">
+    <h1>The guru's friends</h1>
+    <p>Integrate with all your other tools and get everything working in harmony.</p>
+
+    <div class="logo-pic" >
+    </div>
+    <div class="loging-picture">
+
+    </div>
+  </div>
+
+
+
+  <div class="footering">
+    <div class="text">
+      <h1>Ready to experience scheduling nirvana?</h1>
+      <input type="text" placeholder="Enter Email" class="enter">
+      <button class="btn-email">Try it free</button>
+      <p>30-day free trial. No credit card needed.</p>
+    </div>
+  </div>

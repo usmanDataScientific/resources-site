@@ -1,0 +1,59 @@
+<div class="body">
+
+        <!--------Navber Desktop Size----------->
+
+    <div [class.Scrolled]="isScrolled" class="navber">
+        <a href="#home"><div class="logo">Resources.Com</div></a>
+          <button class="menu-btn" (click)="toggleMenu()">☰</button>
+         <div class="nav-links">
+            <a routerLink="/feature">Feature</a>
+            <a routerLink="/industry">Industry</a>
+            <a href="#Princing">Princing</a>
+            <a href="https://apps.microsoft.com/detail/9wzdncrfj3pz?hl=en-us&gl=US">Company</a>
+            <a href="#More">More</a>
+            </div>
+              <div class="button">
+            <button class="login">Login</button>
+             <button class="free-trail">Free Trail</button>  
+            </div>
+        </div>
+         <!--------Navber Mobile Size----------->
+       <ul class="mobile-menu" *ngIf="menuOpen">
+        <a routerLink="/feature">Feature</a>
+        <a routerLink="/Industry">Industry</a>
+        <a href="#Princing">Princing</a>
+        <a href="https://apps.microsoft.com/detail/9wzdncrfj3pz?hl=en-us&gl=US">Company</a>
+        <a href="#More">More</a>
+         <div class="button-login">
+            <button class="login">Login</button>
+             <button class="free-trail">Free Trail</button>  
+            </div>
+       </ul>
+
+
+
+
+<div class="container">
+    <h1><span>Agency resource</span> management <span class="software">software</span></h1>
+    <p>Agency life can be fast and furious. The right agency resource planning process will help you control the chaos. Deliver client-pleasing projects and boost billable hours, without overstretching your team.</p>
+    <button class="btn">Start 30-Trail</button>
+</div>
+<div class="backgoundpic">
+</div>
+
+
+<div class="desigin">
+    <div class="background-pic">
+    </div>
+    </div>
+
+
+    
+  <div class="footering">
+    <div class="text">
+      <h1>Ready to experience scheduling nirvana?</h1>
+      <input type="text" placeholder="Enter Email" class="enter">
+      <button class="btn-email">Try it free</button>
+      <p>30-day free trial. No credit card needed.</p>
+    </div>
+  </div>

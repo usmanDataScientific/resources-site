@@ -1,0 +1,67 @@
+<div class="body">
+
+        <!--------Navber Desktop Size----------->
+
+    <div [class.Scrolled]="isScrolled" class="navber">
+        <a href="#home"><div class="logo">Resources.Com</div></a>
+          <button class="menu-btn" (click)="toggleMenu()">☰</button>
+         <div class="nav-links">
+            <a routerLink="/feature" >Feature</a>
+            <a routerLink="/industry">Industry</a>
+            <a href="#Princing">Princing</a>
+            <a href="https://apps.microsoft.com/detail/9wzdncrfj3pz?hl=en-us&gl=US">Company</a>
+            <a href="#More">More</a>
+            </div>
+              <div class="button">
+            <button class="login">Login</button>
+             <button class="free-trail">Free Trail</button>  
+            </div>
+        </div>
+         <!--------Navber Mobile Size----------->
+       <ul class="mobile-menu" *ngIf="menuOpen">
+        <a routerLink="/feature">Feature</a>
+        <a routerLink="/industry">Industry</a>
+        <a href="#Princing">Princing</a>
+        <a href="https://apps.microsoft.com/detail/9wzdncrfj3pz?hl=en-us&gl=US">Company</a>
+        <a href="#More">More</a>
+         <div class="button-login">
+            <button class="login">Login</button>
+             <button class="free-trail">Free Trail</button>  
+            </div>
+       </ul>
+
+
+
+
+
+<div class="container">
+    <h1><span>Resource</span> scheduling software for happier workers</h1>
+    <p>Your employees are your most precious asset. Resource Guru is a forecasting and scheduling tool that respects people's time and ensures no one gets overloaded or burnt out.</p>
+    <button class="btn-days">Start 30-Days free</button>
+</div>
+<div class="beenpic">
+</div>
+
+
+
+
+<div class="section">
+<div class="left-pic">
+</div>
+ <div class="right">
+   <h3>Everything important in one calendar</h3>
+   <p>Inaccurate schedules can throw a working day into disarray. Use our two-way Google Calendar and Outlook Calendar integrations or sync via iCal feed to get a single view of team availability, all in one place.</p>
+    <button class="trail">Get-Trail</button>
+</div>
+</div>
+
+
+
+ <div class="footering">
+    <div class="text">
+      <h1>Ready to experience scheduling nirvana?</h1>
+      <input type="text" placeholder="Enter Email" class="enter">
+      <button class="btn-email">Try it free</button>
+      <p>30-day free trial. No credit card needed.</p>
+    </div>
+  </div>

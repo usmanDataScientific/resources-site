@@ -1,0 +1,721 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body {
+     border-bottom-left-radius: 40% 5%;
+  border-bottom-right-radius: 40% 5%;
+    position: absolute;
+    background-color: transparent;
+    height: 100vh;
+    width: 78rem;
+    top: 0;
+    left: 0;
+    background: url('https://th.bing.com/th/id/R.578ea138d4f45d9742a22718dfb191c2?rik=ng2RNdKeoTMJxA&pid=ImgRaw&r=0') no-repeat center center/cover;
+    animation: fadeSlide 2s ease;
+}
+@keyframes fadeSlide {
+    0%{
+        opacity: 0;
+        transform: translateY(180px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navber {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    width: 77rem;
+    position: fixed;
+    transition: all 3s ease;
+    animation: fadeSilde 4s ease;
+}
+@keyframes fadeSlide {
+    0%{
+
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navber.Scrolled {
+    transform: translateY(1px);
+    background-color: purple;
+    height: 4rem;
+}
+.navber.Scrolled a{
+    color: rgb(255, 255, 255);
+}
+.navber.Scrolled .logo{
+    color: rgb(255, 255, 255);
+}
+
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-links{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10rem;   
+    gap: 2rem;
+}
+.nav-links a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.nav-links a:hover{
+    color: wheat;
+}
+.button{
+    gap: 1rem;
+    display: flex;
+    margin-left: 1.8rem;
+}
+.login{
+    padding: 0.6rem;
+    width: 5rem;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.login:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.free-trail {
+    padding: 0.5rem;
+    width: 6rem;
+    border-radius: 3px;
+    background-color: rgb(19, 255, 19);
+    color: black;
+    border: none;
+}
+.free-trail:hover{
+    background-color: rgb(3, 177, 3);
+}
+
+
+.menu-btn {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .body {
+        height: 79rem;
+        width: 36.5rem;
+    }
+    .navber{
+        margin-top: 1.5rem;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+    .logo{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+      .menu-btn {
+        display: block;
+        background: none;
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        border: none;
+        margin-left: 9rem;
+    }
+    .navber.Scrolled {
+        background-color: purple;
+    }
+    .navber.Scrolled .logo{
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+    }
+    .navber.Scrolled .menu-btn{
+        background: none;
+        color: rgb(255, 255, 255);
+        font-size: 2.3rem;
+        margin-left: 12rem;
+    }
+    .mobile-menu {
+        position: fixed;
+        display: block;
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        height: 39rem;
+        width: 36rem;
+        top: 100px;
+        right: 0;
+        gap: 0.2rem;
+        background-color: white;
+        margin-left: -27rem;
+        text-align: center;
+        z-index: 1000;
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+    .mobile-menu a{
+        margin-top: 3rem;
+        color: rgb(0, 0, 0);
+        font-size: 2.3rem;
+        list-style: none;
+        text-decoration: none;
+    }
+     .navber.Scrolled .mobile-menu{
+       background-color: rgb(255, 255, 255);
+       
+    }
+    .button{
+        display: none;
+    }
+    .button-login{
+        display: block;
+        gap: 3rem;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    .login{
+        width: 10rem;
+        padding: 1.2rem;
+        font-size: 2rem;
+        margin-left: -1rem;
+        font-weight: bold;
+        border-radius: 6px;
+        background-color: black;
+        color: white;
+    }
+    .free-trail {
+        width: 14rem;
+        padding: 1.2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 2rem;
+        border-radius: 8px;
+        background-color: orangered;
+        color: white;
+
+    }
+    
+}
+
+
+
+
+
+         //// Heading ////
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+}
+.right{
+    background: url('https://static.vecteezy.com/system/resources/previews/011/153/364/original/3d-website-developer-working-on-laptop-illustration-png.png') no-repeat center center/cover;
+    height: 25rem;
+    margin-top: 10rem;
+    width: 34rem;
+    margin-left: 5rem;
+    border-radius: 8px;
+}
+.Heading {
+  margin-top: 10rem;
+  margin-left: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  animation: fadeSlide 4s ease forwards;
+}
+@keyframes fadeSlide {
+    0%{
+        opacity: 0;
+        transform: translateY(250px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Heading h1{
+    font-size: 5rem;
+    color: white;
+     margin-bottom: 1.1rem;
+}
+.Heading h1 span{
+    color: aqua;
+    font-weight: bold;
+}
+.Heading p{
+   color: white;
+   font-size: 2.3rem;
+   line-height: 3rem;
+}
+.email-btn {
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+.E-mail{
+    padding: 0.5rem;
+    width: 14rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+.trail-btn {
+    margin-left: 1rem;
+     padding: 0.6rem;
+    width: 7rem;
+    border-radius: 3px;
+    background-color: rgb(19, 255, 19);
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+.trail-btn:hover{
+    background-color: rgb(3, 177, 3);
+}
+@media (max-width: 600px) {
+    .Heading{
+        margin-top: 12rem;
+    }
+    .email-btn{
+        margin-top: 27rem;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .E-mail {
+       margin-top: 3rem;
+       width: 100%;
+       padding: 1rem;
+       font-weight: bold;
+    }
+    .trail-btn {
+        width: 100%;
+       padding: 1rem;
+       margin-left: -0.1rem;
+       font-weight: bold;
+    }
+    .right{
+       margin-top: -35rem;
+       margin-left: -1rem;
+    }
+}
+
+
+.Section {
+    margin-top: 40rem;
+    margin-left: 21rem;
+}
+.Section h1{
+    color: darkorchid;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+.Section p{
+    margin-left: -5rem;
+    margin-top: 2rem;
+    width: 45rem;
+    line-height: 2.3rem;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: palevioletred;
+}
+.image {
+    background: url('https://www.bypeople.com/wp-content/uploads/2020/03/flat-illustrations-gradient-trendy-startup-illustrations-deals-bypeople-67.jpg') no-repeat center center/cover;
+    height: 33rem;
+    width: 45rem;
+    margin-top: 4rem;
+    margin-left: -7rem;
+}
+
+@media (max-width: 600px) {
+    .Section {
+        margin-top: 83rem;
+        margin-left: 2rem;
+    }
+    .Section h1{
+        margin-left: 1rem;
+        font-size: 3rem;
+        width: 30rem;
+    }
+    .Section h1 span{
+        margin-left: 8rem;
+    }
+    .Section p{
+        margin-top: 2rem;
+        width: 30rem;
+        margin-left: 0.3rem;
+    }
+    .image {
+        background: url('https://economicpoint.com/sites/default/files/resources_0.png') no-repeat center center/cover;
+    }
+}
+
+.desigin{
+    background-color: purple;
+    margin-top: 3rem;
+    height: 18rem;
+    width: 78rem;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.background-pic{
+    background: url('https://resourceguruapp.com/cms-images/g2-badges-winter-2025-xl-alt-e32ccb6a.png') no-repeat center center/cover;
+    height: 17rem;
+    width: 78rem;
+    margin-left: 1rem;
+}
+@media (max-width: 600px) {
+    .desigin{
+        width: 38rem;
+        height: 20rem;
+                margin-left: -1rem;
+
+    }
+    .background-pic{
+        width: 38rem;
+        background: url('https://resourceguruapp.com/cms-images/g2-badges-winter-2025-sm-alt-435b95f1.png') no-repeat center center/cover;
+    }
+}
+
+
+
+.rocket {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-writing {
+    margin-top: 8rem;
+    margin-left: 5rem;
+}
+.left-writing h1{
+    font-weight: 100;
+    font-size: 3.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+.left-writing p{
+    width: 27rem;
+    line-height: 1.3rem;
+}
+.btn {
+    margin-top: 1rem;
+    background-color: orangered;
+    color: white;
+    width: 8rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+}
+.btn:hover{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+.right-rocket{
+    background: url('https://static.vecteezy.com/system/resources/previews/043/601/945/original/3d-render-rocket-blasting-off-on-isolated-transparent-background-png.png') no-repeat center center/cover;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    height: 25rem;
+    width: 30rem;
+}
+@media (max-width: 600px) {
+    .left-writing{
+        margin-top: 31rem;
+    }
+    .left-writing p{
+        width: 33rem;
+        margin-left: -2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .right-rocket{
+        margin-left: 3rem;
+        margin-top: -47rem;
+        margin-right: -12rem;
+        background: url('https://png.pngtree.com/thumb_back/fh260/background/20231220/pngtree-launched-rocket-cartoon-background-image_15528582.png') no-repeat center center/cover;
+    }
+    .left-writing h1{
+        font-size: 3rem;
+        width: 55rem;
+        margin-left: -2.5rem;
+    }
+    .btn{
+        width: 12rem;
+        padding: 0.9rem;
+        margin-left: -2.5rem;
+        font-weight: bold;
+    }
+}
+
+
+
+.writing-leptop {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-time {
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+.left-time h1{
+     font-weight: 100;
+    font-size: 3.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+    margin-left: -3;
+}
+.left-time p{
+     width: 27rem;
+    line-height: 1.3rem;
+}
+.left-time h1 span{
+    color: aqua;
+    font-weight: bold;
+    font-style: italic;
+}
+.right-leptop{
+    background: url('https://th.bing.com/th/id/OIP.OsDC02AyqTi4LPrnxzaL5wHaHa?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+     margin-top: 8rem;
+    margin-left: 8rem;
+    height: 30rem;
+    width: 25rem;
+}
+.leptop-btn {
+    width: 10rem;
+    padding: 0.8rem;
+    font-weight: bold;
+    background-color: purple;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    .left-time {
+        margin-top: 25rem;
+    }
+    .left-time h1{
+        margin-left: -2rem;
+        font-size: 3.8rem;
+    }
+    .left-time h1 span{
+        color: blue;
+    }
+    .left-time p{
+        margin-left: -2rem;
+        font-size: 1.2rem;
+    }
+    
+    .right-leptop{
+        margin-left: 5rem;
+        margin-right: -15rem;
+        margin-top: -60rem;
+        background: url('https://static.vecteezy.com/system/resources/previews/011/153/368/non_2x/3d-website-developer-working-on-laptop-illustration-png.png') no-repeat center center/cover;
+    }
+    .leptop-btn {
+        margin-top: 2rem;
+        margin-left:  -2rem;
+    }
+}
+
+
+.girl-pic{
+    background: url('https://resourceguruapp.com/cms-images/path-to-success-XL-c-c2b6f51e.jpg') no-repeat center center/cover;
+    margin-top: 2rem;
+    height: 30rem;
+    width: 78rem;
+    position: absolute;
+}
+
+.paragraph p{
+    color: white;
+    font-size: 2.9rem;
+    width: 51rem;
+    margin-left: 16rem;
+    font-weight: bold;
+    margin-top: 8rem;
+    line-height: 3.5rem;
+}
+.get-free {
+    display: none;
+}
+@media (max-width: 600px) {
+    .girl-pic{
+        background: url('https://resourceguruapp.com/cms-images/path-to-success-SM-c-0a2e2138@2x.jpg') no-repeat center center/cover;
+        width: 36rem;
+        height: 55rem;
+        margin-top: 3rem;
+    }
+    .paragraph p{
+        margin-left: 3rem;
+        margin-top: 15rem;
+        width: 30rem;
+        line-height: 3.9rem;
+    }
+    .get-free {
+        margin-top: 3rem;
+        width: 15rem;
+        padding: 0.9rem;
+        margin-left: 10rem;
+        background-color: orangered;
+        color: white;
+        font-weight: bold;
+        margin-top: 16rem;
+        display: block;
+        border: none;
+        border-radius: 8px;
+        font-weight: bolder;
+    }
+}
+
+
+
+.logo-app {
+    background-color: rgb(249, 236, 210);
+    height: 50rem;
+    width: 78rem;
+    margin-top: 37rem;
+    border-bottom-left-radius: 30%;
+}
+.logo-app h1{
+    color: purple;
+    font-size: 2.5rem;
+    margin-left: 27rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+.logo-app p{
+    margin-left: 20rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+
+.logo-pic{
+    background: url('https://resourceguruapp.com/cms-images/guru-integrations-mid-desktop-2022-3da396e7@2x.png') no-repeat center center/cover;
+    height: 35rem;
+    width: 52rem;
+    margin-top: 8rem;
+}
+.loging-picture{
+     height: 30rem;
+    width: 50rem;
+    margin-top: -38rem;
+    margin-left: 27rem;
+    background: url('https://resourceguruapp.com/cms-images/guru-integrations-mid-mobile-2022-401b1ab5@2x.png') no-repeat center center/cover;
+}
+@media (max-width: 600px) {
+    .logo-app{
+        width: 36rem;
+        height: 70rem;
+        margin-top: 68rem;
+        background: linear-gradient(white, lightblue, rgb(237, 250, 255));
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 40%;
+    }
+    .logo-app h1{
+        margin-left: 6rem;
+        font-size: 2.9rem;
+        color: rgb(0, 0, 0);
+        margin-top: 3rem;
+    }
+    .logo-app p{
+        margin-left: 3rem;
+        width: 33rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        color: rgb(0, 0, 0);
+    }
+    .logo-pic{
+        width: 30rem;
+        height: 20rem;
+        margin-left: 2rem;
+    }
+    .loging-picture{
+        width: 30rem;
+        height: 20rem;
+        margin-left: -4rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.footering {
+    background-color: rgb(45, 1, 45);
+    height: 20rem;
+    width: 78rem;
+    position: absolute;
+}
+.text {
+    margin-left: 20rem;
+    margin-top: 8rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text p{
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+.enter {
+  padding: 0.7rem;
+    width: 16rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.btn-email{
+ margin-left: 1rem;
+     padding: 0.7rem;
+    width: 10rem;
+    border-radius: 3px;
+    background-color: rgb(19, 255, 19);
+    color: black;
+    border: none;
+    font-weight: bold;
+}   
+@media (max-width: 600px) {
+    .footering{
+        width: 37rem;
+    }
+    .text {
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+    .text h1{
+       font-size: 2.5rem;
+       margin-left: 4rem;
+    }
+}
